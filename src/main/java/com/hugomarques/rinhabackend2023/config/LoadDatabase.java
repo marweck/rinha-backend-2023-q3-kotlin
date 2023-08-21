@@ -1,4 +1,4 @@
-package com.hugomarques.rinhabackend2023;
+package com.hugomarques.rinhabackend2023.config;
 
 import java.util.List;
 
