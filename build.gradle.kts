@@ -3,6 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     id("org.springframework.boot") version "3.1.2"
     id("io.spring.dependency-management") version "1.1.3"
+    id("org.graalvm.buildtools.native") version "0.9.24"
     kotlin("jvm") version "1.9.0"
     kotlin("plugin.spring") version "1.9.0"
     kotlin("plugin.jpa") version "1.9.0"
@@ -16,12 +17,17 @@ repositories {
     mavenCentral()
 }
 
-java.targetCompatibility = JavaVersion.VERSION_20
+java {
+    // This project uses Java 21 apis
+    sourceCompatibility = JavaVersion.VERSION_20
+    targetCompatibility = JavaVersion.VERSION_20
+}
 
 tasks.withType<KotlinCompile> {
     kotlinOptions {
         // Null-safety for Spring API in Kotlin
         freeCompilerArgs = listOf("-Xjsr305=strict")
+        // Highest so far Java version supported by Kotlin
         jvmTarget = "20"
     }
 }
