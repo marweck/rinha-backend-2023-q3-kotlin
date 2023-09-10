@@ -14,7 +14,7 @@ Rinha backend 2023 q3
 > gradle nativeCompile
 ```
 
-Output: ./build/generated/
+Output: ./build/native/nativeCompile/rinhabackend2023 (executable)
 
 ## GraalVM CE Installation
 
