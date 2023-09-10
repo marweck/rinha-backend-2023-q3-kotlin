@@ -16,7 +16,6 @@ description = "Back para o projeto rinha backend 2023"
 repositories {
     mavenCentral()
     maven { url = uri("https://repo.spring.io/milestone") }
-    maven { url = uri("https://repo.spring.io/snapshot") }
 }
 
 java {
