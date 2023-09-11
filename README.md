@@ -37,11 +37,12 @@ mv ~/Downloads/graalvm-community-openjdk-21+35.1 ~/bin
 sdk install java graalvm-ce-21 $HOME/bin/graalvm-community-openjdk-21+35.1/Contents/Home
 ```
 
-Mac:
+Mac specific:
 ```bash
 sudo xattr -r -d com.apple.quarantine ~/bin/graalvm-espresso-community-openjdk-21+35.1
 ```
 
+Set as default JVM:
 ```bash
 > sdk default java graalvm-ce-21
 ```
