@@ -8,6 +8,12 @@ Rinha backend 2023 q3
 > gradle build
 ```
 
+## Spring Boot Run
+
+```bash
+> gradle bootRun
+```
+
 ## Graalvm Native Compilation
 
 ```bash
@@ -15,6 +21,12 @@ Rinha backend 2023 q3
 ```
 
 Output: ./build/native/nativeCompile/rinhabackend2023 (executable)
+
+### Run Native App
+
+```bash
+> ./build/native/nativeCompile/rinhabackend2023
+```
 
 ## GraalVM CE Installation
 
